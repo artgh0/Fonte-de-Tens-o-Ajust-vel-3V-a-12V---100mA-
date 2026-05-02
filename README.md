@@ -95,7 +95,6 @@ A corrente alternada proveniente do transformador precisa ser convertida em corr
 
 O diodo 1N4007 foi escolhido por suportar até **1 A de corrente** e **1000 V de tensão reversa**, oferecendo ampla margem de segurança para os 100 mA exigidos pelo projeto. Cada diodo apresenta uma queda de tensão direta de aproximadamente 0,7 V, resultando em queda total de 1,4 V na ponte (dois diodos conduzem simultaneamente).
 
-> O 1N4007 suporta 10× a corrente máxima do projeto.
 
 ---
 
@@ -143,9 +142,8 @@ $$P_Z = V_Z \times I_Z = 13 \times 0{,}005 = 65\text{ mW}$$
 
 O Zener é o elemento que define a **tensão de referência** do circuito. Ele conduz em modo reverso sempre que a tensão em seus terminais atinge sua tensão de ruptura (13 V), mantendo esse valor constante independentemente de variações na entrada.
 
-Escolhi o **1N4743 de 13 V** porque, ao descontar a queda $V_{BE}$ de 0,7 V do transistor BC337, a tensão máxima de saída fica em aproximadamente **12,3 V**, superando a meta de 12 V do projeto. Zeners com tensão menor não atingiriam os 12 V de saída; tensões maiores elevariam demais a dissipação no transistor.
+Escolhi o **1N4743 de 13 V** porque, ao descontar a queda $V_{BE}$ de 0,7 V do transistor BC337, a tensão máxima de saída fica em aproximadamente **12,3 V**, superando a meta de 12 V do projeto. Zeners com tensão menor não atingiriam os 12 V de saída, tensões maiores elevariam demais a dissipação no transistor.
 
-> A escolha de 13 V compensa exatamente a queda $V_{BE}$ do transistor, garantindo a faixa de saída desejada.
 
 ---
 
