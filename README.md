@@ -71,7 +71,7 @@ Esta seção detalha o papel de cada componente no sistema, fundamentado nos con
 
 ## RELATÓRIO
 
-[Acesse aqui](https://is.gd/NnS61O)
+[Acesse aqui](https://is.gd/kiOGON)
 
 > Como a fonte é do tipo linear, a diferença entre a tensão de entrada e a de saída é dissipada em calor, principalmente no transistor. Em uma saída de 3 V com carga máxima (100 mA), o componente precisa dissipar o excesso de energia, tornando o uso de dissipador térmico recomendado para preservar a vida útil dos semicondutores.
 
