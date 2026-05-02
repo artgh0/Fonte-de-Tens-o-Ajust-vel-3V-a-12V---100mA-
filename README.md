@@ -1,6 +1,6 @@
 ## INTRODUÇÃO
 
-Este projeto detalha o desenvolvimento de uma fonte de alimentação linear ajustável, projetada para converter a tensão alternada da rede elétrica em tensão contínua estável. O circuito emprega uma topologia clássica de regulação série com transistor e diodo Zener, sendo capaz de fornecer até 100 mA — ideal para experimentos laboratoriais e alimentação de circuitos de pequena escala.
+Este projeto detalha o desenvolvimento de uma fonte de alimentação linear ajustável, projetada para converter a tensão alternada da rede elétrica em tensão contínua estável. O circuito emprega uma topologia clássica de regulação série com transistor e diodo Zener, sendo capaz de fornecer até 100 mA.
 
 
 
