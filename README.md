@@ -28,11 +28,7 @@ O projeto foi dividido em quatro blocos funcionais:
 
 ## COMPONENTES
 
-Esta seção detalha o papel de cada componente no sistema, fundamentado nos conceitos da disciplina SSC0180 — Eletrônica para Computação.
-
-###  Detalhamento dos Componentes
-
-| Componente | Função Técnica | Explicação Detalhada |
+| Componente | Função Técnica | Resumo |
 | :--- | :--- | :--- |
 | **Transformador** | Redução de tensão | Reduz a tensão CA da rede para um nível seguro e adequado ao restante do circuito. |
 | **Diodos (Ponte)** | Retificação | Quatro diodos em ponte retificadora permitem alimentação independente da polaridade do ciclo CA. |
@@ -42,6 +38,8 @@ Esta seção detalha o papel de cada componente no sistema, fundamentado nos con
 | **Potenciômetro** | Controle de saída | Resistência variável que permite ao usuário ajustar a tensão de saída entre 3 V e 12 V. |
 | **Resistores** | Limitação de corrente | Protegem componentes como o LED e o Zener contra fluxo excessivo de corrente. |
 | **Transistor** | Regulação de potência | Regula a corrente entregue à carga com base na tensão de referência do Zener, garantindo saída estável de até 100 mA. |
+
+---
 
 ### Lista de Materiais e Orçamento 
 
