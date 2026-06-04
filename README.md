@@ -1,28 +1,28 @@
 ## INTRODUÇÃO
 
-Este projeto detalha o desenvolvimento de uma fonte de alimentação linear ajustável, projetada para converter a tensão alternada da rede elétrica em tensão contínua estável. O circuito emprega uma topologia clássica de regulação série com transistor e diodo Zener, sendo capaz de fornecer até 100 mA.
+Este projeto detalha o desenvolvimento de uma fonte de alimentação linear ajustável, projetada para converter a tensão alternada da rede elétrica em tensão contínua estável. O circuito contém uma topologia clássica de regulação série com transistor e diodo Zener, sendo capaz de fornecer até 100 mA.
 
 
 
 ## OBJETIVO
 
-Projetar e montar uma fonte de 100 mA utilizando componentes do inventário disponível, respeitando as normas de potência e as bibliotecas do EAGLE estipuladas em aula.
+O objetivo desta atividade é projetar e montar uma fonte de 100 mA, que correspondam as seguintes características:
 
-- **Tensão de entrada:** 127 V ou 220 V (rede CA).
-- **Tensão de saída:** Ajustável entre 3 V e 12 V.
-- **Corrente máxima:** 100 mA.
-- **Estabilidade:** Manter a tensão de saída constante mesmo diante de pequenas variações na entrada.
+- **Tensão de entrada** de 127 V ou 220 V (rede CA).
+- **Tensão de saída** ajustável entre 3 V e 12 V.
+- **Corrente máxima** 100 mA.
+- Manter a tensão de saída constante mesmo com pequenas variações na entrada.
 
 
 
 ## METODOLOGIA
 
-O projeto foi dividido em quatro blocos funcionais:
+O projeto foi dividido em quatro partes:
 
-- **Transformação:** Redução da tensão de rede (220 V / 127 V) para 18 V CA via transformador externo.
-- **Retificação:** Conversão em onda completa por meio de uma ponte montada manualmente com quatro diodos 1N4007.
-- **Filtragem:** Suavização da tensão pulsante através de um capacitor eletrolítico de 1000 µF.
-- **Regulação e ajuste:** Estabilização da saída pelo transistor BC337, tendo como referência um diodo Zener de 13 V e um potenciômetro para controle da faixa de saída.
+- Redução da tensão de rede (220 V / 127 V) para 18 V CA via transformador externo.
+- Conversão em onda completa por meio de uma ponte montada manualmente com quatro diodos 1N4007.
+- Suavização da tensão pulsante através de um capacitor eletrolítico de 1000 µF.
+- Estabilização da saída pelo transistor BC337, tendo como referência um diodo Zener de 13 V e um potenciômetro para controle da faixa de saída.
 
 
 
@@ -33,11 +33,11 @@ O projeto foi dividido em quatro blocos funcionais:
 | **Transformador** | Redução de tensão | Reduz a tensão CA da rede para um nível seguro e adequado ao restante do circuito. |
 | **Diodos (Ponte)** | Retificação | Quatro diodos em ponte retificadora permitem alimentação independente da polaridade do ciclo CA. |
 | **Capacitor** | Filtragem | Armazena e libera carga para suavizar o *ripple*, mantendo o fluxo de tensão mais constante. |
-| **LED** | Sinalização | Indica visualmente a presença de corrente no circuito; não atua na regulação de tensão. |
-| **Diodo Zener** | Referência de tensão | Limita a tensão máxima em 13 V, servindo de referência estável para a base do transistor. |
-| **Potenciômetro** | Controle de saída | Resistência variável que permite ao usuário ajustar a tensão de saída entre 3 V e 12 V. |
-| **Resistores** | Limitação de corrente | Protegem componentes como o LED e o Zener contra fluxo excessivo de corrente. |
-| **Transistor** | Regulação de potência | Regula a corrente entregue à carga com base na tensão de referência do Zener, garantindo saída estável de até 100 mA. |
+| **LED** | Sinalização | Indica visualmente a presença de corrente no circuito|
+| **Diodo Zener** | Referência de tensão | Limita a tensão máxima em 13 V. |
+| **Potenciômetro** | Controle de saída | Resistência variável permitindo ajustar a tensão de saída entre 3 V e 12 V. |
+| **Resistores** | Limitação de corrente | Protegem componentes como o LED e o Zener contra o excesso de corrente. |
+| **Transistor** | Regulação de potência | Regula a corrente entregue à carga com base na tensão de referência do Zener, garante saída estável de até 100 mA. |
 
 ---
 
@@ -74,7 +74,7 @@ O circuito é dividido em quatro blocos funcionais: transformação, retificaç�
 
 O primeiro passo da fonte é reduzir a tensão da rede elétrica (127 V ou 220 V) para um nível seguro e adequado ao restante do circuito. Utilizei um transformador bivolt com saída de **18 V CA**, que após a retificação e filtragem fornece a tensão contínua necessária para alimentar os demais estágios.
 
-A escolha de 18 V CA visa garantir que, mesmo após as quedas de tensão nos diodos da ponte retificadora (~1,4 V no total) e o ripple do capacitor, ainda reste tensão suficiente para que o transistor regule a saída até 12 V com folga adequada.
+A escolha de 18 V CA permite garantir que, mesmo após as quedas de tensão nos diodos da ponte retificadora (~1,4 V no total) e o ripple do capacitor, ainda reste tensão suficiente para que o transistor regule a saída até 12 V com folga adequada.
 
 **Tensão de pico após o transformador:**
 
@@ -91,7 +91,7 @@ $$V_{CC} = 25{,}4 - 2 \times 0{,}7 = 24\text{ V}$$
 
 A corrente alternada proveniente do transformador precisa ser convertida em corrente contínua para alimentar os estágios seguintes. Para isso, utilizei uma **ponte de Graetz** composta por quatro diodos 1N4007 dispostos em configuração de onda completa, que aproveita os dois semiciclos da CA.
 
-O diodo 1N4007 foi escolhido por suportar até **1 A de corrente** e **1000 V de tensão reversa**, oferecendo ampla margem de segurança para os 100 mA exigidos pelo projeto. Cada diodo apresenta uma queda de tensão direta de aproximadamente 0,7 V, resultando em queda total de 1,4 V na ponte (dois diodos conduzem simultaneamente).
+O diodo 1N4007 foi escolhido por suportar até **1 A de corrente** e **1000 V de tensão reversa**, oferecendo uma margem de segurança para os 100 mA exigidos. Cada diodo apresenta uma queda de tensão direta de aproximadamente 0,7 V, resultando em queda total de 1,4 V na ponte (dois diodos conduzem simultaneamente).
 
 
 ---
@@ -117,9 +117,9 @@ $$V_{min} = 24 - 0{,}83 \approx 23{,}2\text{ V}$$
 
 ###  Resistor do Zener — 2,2 kΩ
 
-O diodo Zener precisa de um resistor em série para **limitar a corrente** que passa por ele. Sem esse resistor, o Zener ficaria ligado quase diretamente entre VCC e GND, e a corrente seria limitada apenas pela resistência interna do circuito, o que queimaria o componente instantaneamente.
+O diodo Zener precisa de um resistor em série para **limitar a corrente** que passa por ele. Sem o resistor, o Zener ficaria ligado quase diretamente entre VCC e GND, e a corrente seria limitada apenas pela resistência interna do circuito, queimando o componente.
 
-O resistor de **2,2 kΩ** foi selecionado por ser o valor mais próximo do ideal calculado (~3 kΩ). Ele limita a corrente do Zener a um valor seguro, mantendo a tensão de referência estável em 13 V sem dissipar potência excessiva.
+O resistor de **2,2 kΩ** foi escolhido por ser o valor mais próximo do ideal calculado (~3 kΩ). Ele limita a corrente do Zener a um valor seguro, mantendo a tensão de referência estável em 13 V sem dissipar potência excessiva.
 
 **Corrente pelo Zener:**
 
@@ -138,7 +138,7 @@ $$P_Z = V_Z \times I_Z = 13 \times 0{,}005 = 65\text{ mW}$$
 
 ### Diodo Zener — 1N4743 (13 V / 1 W)
 
-O Zener é o elemento que define a **tensão de referência** do circuito. Ele conduz em modo reverso sempre que a tensão em seus terminais atinge sua tensão de ruptura (13 V), mantendo esse valor constante independentemente de variações na entrada.
+O Zener define a **tensão de referência** do circuito. Ele conduz em modo reverso sempre que a tensão em seus terminais atinge sua tensão de ruptura (13 V), mantendo esse valor constante independentemente de variações na entrada.
 
 Escolhi o **1N4743 de 13 V** porque, ao descontar a queda $V_{BE}$ de 0,7 V do transistor BC337, a tensão máxima de saída fica em aproximadamente **12,3 V**, superando a meta de 12 V do projeto. Zeners com tensão menor não atingiriam os 12 V de saída, tensões maiores elevariam demais a dissipação no transistor.
 
@@ -147,9 +147,9 @@ Escolhi o **1N4743 de 13 V** porque, ao descontar a queda $V_{BE}$ de 0,7 V do t
 
 ### Divisor de Base — Pot 10 kΩ + R 1,2 kΩ
 
-O potenciômetro e o resistor de 1,2 kΩ formam um **divisor de tensão** que controla a tensão aplicada à base do transistor BC337. Variando o potenciômetro, o usuário ajusta a tensão na base e, consequentemente, a tensão de saída da fonte.
+O potenciômetro e o resistor de 1,2 kΩ formam um **divisor de tensão** que controla a tensão aplicada à base do transistor BC337. Variando o potenciômetro, ajusta a tensão na base e a tensão de saída da fonte.
 
-O resistor de **1,2 kΩ** em série com a base tem dupla função: limita a corrente máxima de base (protegendo o BC337 caso o potenciômetro seja girado ao extremo) e garante que o transistor opere na **região ativa linear**, essencial para a regulação estável da tensão.
+O resistor de **1,2 kΩ** em série limita a corrente máxima de base (protegendo o BC337 caso o potenciômetro seja girado ao extremo) e garante que o transistor opere na **região ativa linear**, essencial para a regulação estável da tensão.
 
 **Tensão mínima na base** (potenciômetro no máximo = 10 kΩ):
 
@@ -159,7 +159,7 @@ $$V_{B_{min}} = 13 \times \frac{1200}{1200 + 10000} \approx 1{,}4\text{ V}$$
 
 $$V_{out_{min}} = 1{,}4 - 0{,}7 \approx 0{,}7\text{ V}$$
 
-> Na prática, o transistor começa a conduzir adequadamente a partir de ~3 V na saída.
+> O transistor começa a conduzir adequadamente a partir de ~3 V na saída.
 
 **Tensão máxima na base** (potenciômetro no mínimo = 50 Ω, limitação do simulador):
 
@@ -187,7 +187,7 @@ $$I_B = \frac{V_{B_{max}} - V_{BE}}{R_{base}} = \frac{12{,}5 - 0{,}7}{1200} \app
 
 $$I_C = h_{FE} \times I_B = 100 \times 9{,}8 = 980\text{ mA}$$
 
-> Na prática, a corrente é limitada pela carga a **100 mA**, bem dentro do limite do BC337.
+> A corrente é limitada pela carga a **100 mA**, bem dentro do limite do BC337.
 
 **Potência dissipada no pior caso** (saída em 3 V, carga de 100 mA):
 
@@ -244,7 +244,7 @@ $$P = \frac{V^2}{R} = \frac{144}{1200} = 120\text{ mW}$$
 | Corrente no LED | ~22 mA | 30 mA | ✅ |
 | Potência no R LED | ~484 mW | 1000 mW | ✅ |
 | Corrente BC337 (prática) | 100 mA | 500 mA | ✅ |
-| Potência BC337 (pior caso) | 2,1 W | 625 mW | ⚠️ dissipador p/ uso longo |
+| Potência BC337 (pior caso) | 2,1 W | 625 mW |  dissipador p/ uso longo |
 | Potência na carga | 120 mW | 500 mW | ✅ |
 
 
