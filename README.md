@@ -138,7 +138,7 @@ $$C_{ideal} = \frac{I_{carga}}{2 \times f \times \Delta V_{ideal}} = \frac{0{,}1
  
 Qualquer capacitor **≥ 347 µF** já atenderia ao critério de 10% do professor.
  
-**Capacitor disponível e utilizado:** 1000 µF / 50  (o que eu tinha disponível, acima do mínimo ideal calculado).
+**Capacitor disponível e utilizado:** 1000 µF / 50 V (o que eu tinha disponível, acima do mínimo ideal calculado).
 
 ---
 
