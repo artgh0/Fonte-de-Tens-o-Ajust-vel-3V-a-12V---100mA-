@@ -204,9 +204,9 @@ $$V_{B_{min}} = 13 \times \frac{3300}{13300} \approx 3{,}23\text{ V}$$
 
 $$V_{out_{min}} = 3{,}23 - 0{,}7 \approx 2{,}53\text{ V}$$
  
-> A faixa real (~2,5 V a ~12,25 V) cobre confortavelmente a meta de projeto de **3 V a 12 V**.
+Validação em bancada (protoboard real): com o potenciômetro no extremo de saída mínima, o multímetro mediu 2,95 V na saída . A diferença é esperada e vem das tolerâncias dos componentes reais (Zener 1N4743 com tolerância de ±5%, resistores de 3,3 kΩ com 5% cada) e da pequena corrente de base do BC337 carregando o nó do divisor, efeito que o cálculo simplificado não captura. O valor medido confirma que o circuito físico atende com folga a meta de projeto de 3 V.
 
-
+A faixa real (~2,5–2,95 V a ~12,25–12,51 V) cobre confortavelmente a meta de projeto de 3 V a 12 V.
 
 ---
 
@@ -281,6 +281,8 @@ $$P = \frac{V^2}{R} = \frac{12{,}51^2}{1200} \approx 130\text{ mW}$$
 
 ## VIDEO DO PROJETO
 
+
+https://github.com/user-attachments/assets/ed489270-2d82-4a1b-8a04-cfdd67fa29f1
 
 
 
