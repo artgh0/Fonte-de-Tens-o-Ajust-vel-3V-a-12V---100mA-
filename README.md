@@ -274,6 +274,12 @@ $$P = \frac{V^2}{R} = \frac{12{,}51^2}{1200} \approx 130\text{ mW}$$
 
 ---
 
+## ESQUEMÁTICO DA PCB
+<img width="1434" height="455" alt="Screenshot from 2026-06-29 20-36-29" src="https://github.com/user-attachments/assets/ed045ae9-13ce-4a2e-b803-dccdc83612fa" />
+
+## IMAGEM DO PCB 
+
+
 
 ## IMAGEM DO PROJETO
 
