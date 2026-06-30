@@ -60,7 +60,7 @@ O projeto foi dividido em quatro partes:
 | Diodo Zener |1N4743 (13 V / 1 W) | 1 | R$ 0,22 | R$ 0,22 |
 | Transistor |  NPN BC337 (500 mA) | 1 | R$ 0,32 | R$ 0,32 |
 | Potenciômetro |10 kΩ Linear | 1 | R$ 1,92 | R$ 1,92 |
-| Resistor (LED) | Proteção do LED | `R-EU_0204/7` | 3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
+| Resistor (LED) | 3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
 | Resistor (Zener) |  3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
 | Resistor (Coletor) |  82 Ω 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
 | Resistor (Divisor) |  3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
