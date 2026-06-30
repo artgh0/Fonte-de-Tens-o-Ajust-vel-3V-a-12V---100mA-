@@ -53,7 +53,7 @@ O projeto foi dividido em quatro partes:
 ### Lista de Materiais e Orçamento 
 
 | Componente | Componente Utilizado | Qtd. | Preço Unit. | Subtotal |
-| :--- | :--- | :--- | :--- | :---: | :---: | :---: |
+| :--- | :--- | :---: | :---: | :---: |
 | Transformador | Trafo Bivolt 18+18 V / 200 mA | 1 | R$ 27,99 | R$ 27,99 |
 | Diodos |  Diodo 1N4007 | 4 | R$ 0,13 | R$ 0,52 |
 | Capacitor | 1000 µF / 50 V | 1 | R$ 1,20 | R$ 1,20 |
@@ -65,7 +65,7 @@ O projeto foi dividido em quatro partes:
 | Resistor (Coletor) |  82 Ω 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
 | Resistor (Divisor) |  3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
 | LED | LED Difuso 5 mm | 1 | R$ 0,24 | R$ 0,24 |
-| **Total** | | | | | | **R$ 33,37** |
+| **Total** | | |  | **R$ 33,37** |
  
 ---
  
