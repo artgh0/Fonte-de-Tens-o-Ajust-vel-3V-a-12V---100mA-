@@ -52,19 +52,19 @@ O projeto foi dividido em quatro partes:
 
 ### Lista de Materiais e Orçamento 
 
-| Componente | Função | Biblioteca EAGLE | Componente Utilizado | Qtd. | Preço Unit. | Subtotal |
+| Componente | Componente Utilizado | Qtd. | Preço Unit. | Subtotal |
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: |
-| Transformador | Redução CA | (Externo à placa) | Trafo Bivolt 18+18 V / 200 mA | 1 | R$ 27,99 | R$ 27,99 |
-| Diodos | Retificação | `diode` / `1N4007` | Diodo 1N4007 | 4 | R$ 0,13 | R$ 0,52 |
-| Capacitor | Filtragem | `CPOL-EUE5-10.5` | 1000 µF / 50 V | 1 | R$ 1,20 | R$ 1,20 |
-| Diodo Zener | Referência | `diode` / `1N4728` | 1N4743 (13 V / 1 W) | 1 | R$ 0,22 | R$ 0,22 |
-| Transistor | Regulação | `transistor` / `BC337` | NPN BC337 (500 mA) | 1 | R$ 0,32 | R$ 0,32 |
-| Potenciômetro | Ajuste | `pot` / `3RP/1610N` | 10 kΩ Linear | 1 | R$ 1,92 | R$ 1,92 |
+| Transformador | Trafo Bivolt 18+18 V / 200 mA | 1 | R$ 27,99 | R$ 27,99 |
+| Diodos |  Diodo 1N4007 | 4 | R$ 0,13 | R$ 0,52 |
+| Capacitor | 1000 µF / 50 V | 1 | R$ 1,20 | R$ 1,20 |
+| Diodo Zener |1N4743 (13 V / 1 W) | 1 | R$ 0,22 | R$ 0,22 |
+| Transistor |  NPN BC337 (500 mA) | 1 | R$ 0,32 | R$ 0,32 |
+| Potenciômetro |10 kΩ Linear | 1 | R$ 1,92 | R$ 1,92 |
 | Resistor (LED) | Proteção do LED | `R-EU_0204/7` | 3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
-| Resistor (Zener) | Referência de tensão | `R-EU_0204/7` | 3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
-| Resistor (Coletor) | Alívio térmico do BC337 | `R-EU_0204/7` | 82 Ω 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
-| Resistor (Divisor) | Base inferior do divisor | `R-EU_0204/7` | 3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
-| LED | Sinalização | `led` / `LED5MM` | LED Difuso 5 mm | 1 | R$ 0,24 | R$ 0,24 |
+| Resistor (Zener) |  3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
+| Resistor (Coletor) |  82 Ω 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
+| Resistor (Divisor) |  3,3 kΩ 5% (1 W) | 1 | R$ 0,24 | R$ 0,24 |
+| LED | LED Difuso 5 mm | 1 | R$ 0,24 | R$ 0,24 |
 | **Total** | | | | | | **R$ 33,37** |
  
 ---
