@@ -254,8 +254,6 @@ $$I_{LED} = \frac{V_{CC} - V_{LED}}{R} = \frac{24 - 2}{3300} \approx 6{,}67\text
 
 $$P_R = I^2 \times R = (0{,}00667)^2 \times 3300 \approx 147\text{ mW}$$
  
-> Com 3,3 kΩ o LED acende com brilho mais discreto (~6,7 mA) do que o calculado antes (~22 mA), mas ainda dentro da faixa segura de operação.
-
 
 ---
 
