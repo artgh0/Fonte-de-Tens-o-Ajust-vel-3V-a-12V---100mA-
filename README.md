@@ -4,15 +4,6 @@ Este projeto detalha o desenvolvimento de uma **fonte de alimentação linear aj
 
 
 
-## OBJETIVO
-
-O objetivo desta atividade é projetar e montar uma fonte de 100 mA, que correspondam as seguintes características:
-
-- **Tensão de entrada** de 127 V ou 220 V (rede CA).
-- **Tensão de saída** ajustável entre 3 V e 12 V.
-- **Corrente máxima** 100 mA.
-- Manter a tensão de saída constante mesmo com pequenas variações na entrada.
-
 ##  DIAGRAMA DE BLOCOS
  
 ```mermaid
