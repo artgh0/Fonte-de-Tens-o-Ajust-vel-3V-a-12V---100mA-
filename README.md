@@ -279,8 +279,8 @@ $$P = \frac{V^2}{R} = \frac{12{,}51^2}{1200} \approx 130\text{ mW}$$
 
 
 ## IMAGEM DA PCB 
-<img width="1607" height="979" alt="ChatGPT Image 29 de jun  de 2026, 22_10_33" src="https://github.com/user-attachments/assets/0740c517-fd1e-44d5-8cc7-cd5fdce43739" />
 
+<img width="2760" height="1720" alt="pcb_fisico_fonte_ssc0180" src="https://github.com/user-attachments/assets/20d78e42-3da8-40d2-b4cd-3aefbf8dedba" />
 
 
 ## IMAGEM DO PROJETO
